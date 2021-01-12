@@ -9,5 +9,5 @@ public class PrivadoSegApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PrivadoSegApplication.class, args);
 	}
-
+//prueba
 }
