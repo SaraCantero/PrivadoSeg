@@ -11,8 +11,8 @@ public class index {
 	
 	@GetMapping("/")
 	public String redirect() {
-		return "redirect:/seguro";	
+		return "redirect:/seguro/";	
 	}
 	
-//probando
 }
+
