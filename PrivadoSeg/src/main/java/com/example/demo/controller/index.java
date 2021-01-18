@@ -5,14 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/seguro")
+@RequestMapping("/")
 
 public class index {
 	
 	@GetMapping("/")
 	public String redirect() {
-		return "seguro";	
+		return "redirect/seguro";	
 	}
-	
-//probando
+
 }
