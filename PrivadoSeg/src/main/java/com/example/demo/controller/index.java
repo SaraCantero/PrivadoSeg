@@ -14,5 +14,5 @@ public class index {
 		return "redirect:/seguro";	
 	}
 	
-
+//probando
 }
