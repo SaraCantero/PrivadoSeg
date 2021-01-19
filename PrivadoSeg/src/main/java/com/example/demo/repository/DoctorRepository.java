@@ -8,8 +8,8 @@ package com.example.demo.repository;
 	import com.example.demo.entity.Doctor;
 
 	@Repository("doctorRepository")
-	public interface DoctorRepository extends JpaRepository<Doctor,Serializable>{
-		
+	public interface DoctorRepository extends JpaRepository<Doctor,Serializable>{	
+		//Pruba sara
 
 	}
 
