@@ -2,6 +2,7 @@ package com.example.demo.model;
 
 import java.sql.Date;
 
+//prueba
 public class purchaseModel {
 
 	private int id, precio, idPaciente;
