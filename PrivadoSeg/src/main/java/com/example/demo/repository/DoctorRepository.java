@@ -10,7 +10,7 @@ package com.example.demo.repository;
 	@Repository("doctorRepository")
 	public interface DoctorRepository extends JpaRepository<Doctor,Serializable>{	
 		
-
+		//prueba
 	}
 
 
