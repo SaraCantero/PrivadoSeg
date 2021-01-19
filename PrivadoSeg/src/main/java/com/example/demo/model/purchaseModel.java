@@ -2,7 +2,7 @@ package com.example.demo.model;
 
 import java.sql.Date;
 
-//prueba2
+//prueba3
 public class purchaseModel {
 
 	private int id, precio, idPaciente;
