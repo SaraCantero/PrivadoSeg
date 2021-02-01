@@ -2,13 +2,13 @@ package com.example.demo.service;
 
 import java.util.List;
 
-import com.example.demo.entity.patient;
-import com.example.demo.model.patientModel;
+
+import com.example.demo.entity.Patient;
 
 public interface PatientService {
 
-	public abstract List <patient> listAllPatient();
-	public abstract patient addPatient(patient patient);
+	public abstract List <Patient> listAllPatient();
+	public abstract Patient addPatient(Patient patient);
 	public abstract int removePatient(int id);
-	public abstract patient updatePatient(patient patient);
+	public abstract Patient updatePatient(Patient patient);
 }

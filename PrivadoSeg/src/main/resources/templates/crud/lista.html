@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"/>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<title>Lista_CRUD</title>
+</head>
+<body>
+<div class="panel panel-info">
+<div class="panel-heading"><h4>Lista Pacientes</h4></div>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>id</th>
+<th>apellido</th>
+<th>direccion</th>
+<th>edad</th>
+<th>especialidad</th>
+<th>fecha_alta</th>
+<th>nombre</th>
+<th>password</th>
+<th>username</th>
+</tr>
+</thead>
+<tbody>
+<tr data-th-each="patient : ${patient}">
+<td data-th-text="${patient.id}"></td>
+<td data-th-text="${patient.apellido}"></td>
+<td data-th-text="${patient.direccion}"></td>
+<td data-th-text="${patient.edad}"></td>
+<td data-th-text="${patient.especialidad}"></td>
+<td data-th-text="${patient.fecha_alta}"></td>
+<td data-th-text="${patient.nombre}"></td>
+<td data-th-text="${patient.password}"></td>
+<td data-th-text="${patient.username}"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
