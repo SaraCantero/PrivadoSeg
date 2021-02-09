@@ -1,59 +1,39 @@
-package com.example.demo.entity;
+package com.example.demo.model;
 
-import java.sql.Date;
+import java.util.Date;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="patient")
 public class Patient {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
-	@Column(name="nombre", unique=false, nullable=false)
-	private String nombre;
-	
-	@Column(name="apellido", unique=false, nullable=false)
-	private String apellido;
-	
-	@Column(name="edad", nullable=false)
 	private int edad;
+	private String nombre, apellido, direccion, especialidad, username, password;
+	private Date fecha_alta;
 	
-	@Column(name="direccion", nullable=false)
-	private String direccion;
-	
-	@Column(name="fechaAlta", nullable=false)
-	private Date fechaAlta;
-	
-	@Column(name="especialidad", nullable=false)
-	private String especialidad;
-	
-	@Column(name="username", unique=true, nullable=false)
-	private String username;
-	
-	@Column(name="password", nullable=false)
-	private String password;
-	
-	
-	public Patient() {
-		super();
-	}
-	
-	public Patient(int id, String nombre, String apellido, int edad, String direccion, Date fechaAlta, String especialidad, String username, String password) {
+	public Patient(int id, String nombre, String apellido, int edad, String direccion, Date fecha_alta, String especialidad, String username, String password) {
 		
+		super();
 		this.id=id;
 		this.nombre=nombre;
 		this.apellido=apellido;
 		this.edad=edad;
 		this.direccion=direccion;
-		this.fechaAlta=fechaAlta;
+		this.fecha_alta=fecha_alta;
 		this.especialidad=especialidad;
 		this.username=username;
 		this.password=password;
+	}
+	
+	public Patient() {
 	}
 
 	public int getId() {
@@ -120,12 +100,12 @@ public class Patient {
 		this.password = password;
 	}
 
-	public Date getFechaAlta() {
-		return fechaAlta;
+	public Date getfecha_alta() {
+		return fecha_alta;
 	}
 
-	public void setFechaAlta(Date fechaAlta) {
-		this.fechaAlta = fechaAlta;
+	public void setfecha_alta(Date fecha_alta) {
+		this.fecha_alta = fecha_alta;
 	}
 	
 }

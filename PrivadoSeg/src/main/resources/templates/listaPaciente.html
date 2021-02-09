@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"/>
@@ -24,16 +24,16 @@
 </tr>
 </thead>
 <tbody>
-<tr data-th-each="patient : ${patient}">
-<td data-th-text="${patient.id}"></td>
-<td data-th-text="${patient.apellido}"></td>
-<td data-th-text="${patient.direccion}"></td>
-<td data-th-text="${patient.edad}"></td>
-<td data-th-text="${patient.especialidad}"></td>
-<td data-th-text="${patient.fecha_alta}"></td>
-<td data-th-text="${patient.nombre}"></td>
-<td data-th-text="${patient.password}"></td>
-<td data-th-text="${patient.username}"></td>
+<tr th:each="patient : ${patients}">
+<td th:text="${patient.id}"></td>
+<td th:text="${patient.apellido}"></td>
+<td th:text="${patient.direccion}"></td>
+<td th:text="${patient.edad}"></td>
+<td th:text="${patient.especialidad}"></td>
+<td th:text="${patient.fecha_alta}"></td>
+<td th:text="${patient.nombre}"></td>
+<td th:text="${patient.password}"></td>
+<td th:text="${patient.username}"></td>
 </tr>
 </tbody>
 </table>
